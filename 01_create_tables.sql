@@ -1,7 +1,7 @@
 
     CREATE TABLE alumnos (
         matricula VARCHAR(20) PRIMARY KEY,
-        nombre VARCHAR(100) NOT NULL
+        nombre VARCHAR(100) 
     );
 
     CREATE TABLE maestros (
