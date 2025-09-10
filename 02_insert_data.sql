@@ -38,7 +38,6 @@ INSERT INTO grupos (periodo, seccion, nombre_grupo, id_maestro) VALUES
 ('20253S', 'T45A', 'PostgreSQL', 9),
 ('20253S', 'T45B', 'PostgreSQL', 10);
 
----
 
 
 INSERT INTO inscripciones (matricula, periodo, seccion, fecha_inscripcion) VALUES
@@ -53,7 +52,6 @@ INSERT INTO inscripciones (matricula, periodo, seccion, fecha_inscripcion) VALUE
 ('A009', '20253S', 'T43A', '2025-08-01'),
 ('A010', '20253S', 'T43A', '2025-08-01');
 
----
 
 
 INSERT INTO asistencia (matricula, periodo, seccion, fecha_hora, presente) VALUES
