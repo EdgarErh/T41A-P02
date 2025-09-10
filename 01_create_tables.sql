@@ -3,14 +3,12 @@ CREATE TABLE alumnos (
         nombre VARCHAR(100) NOT NULL
     );
 
-
-    CREATE TABLE maestros (
+CREATE TABLE maestros (
         id_maestro SERIAL PRIMARY KEY,
         nombre VARCHAR(100) NOT NULL
     );
 
-
-    CREATE TABLE grupos (
+CREATE TABLE grupos (
         periodo VARCHAR(10) NOT NULL,
         seccion VARCHAR(10) NOT NULL,
         nombre_grupo VARCHAR(50) NOT NULL,
@@ -21,7 +19,7 @@ CREATE TABLE alumnos (
             ON UPDATE CASCADE
     );
 
-    CREATE TABLE inscripciones (
+CREATE TABLE inscripciones (
         matricula VARCHAR(20) NOT NULL,
         periodo VARCHAR(10) NOT NULL,
         seccion VARCHAR(10) NOT NULL,
@@ -35,8 +33,7 @@ CREATE TABLE alumnos (
         PRIMARY KEY (matricula, periodo, seccion)
     );
 
-
-    CREATE TABLE asistencia (
+CREATE TABLE asistencia (
         matricula VARCHAR(20) NOT NULL,
         periodo VARCHAR(10) NOT NULL,
         seccion VARCHAR(10) NOT NULL,
